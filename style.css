@@ -53,6 +53,10 @@ main {
     background-color:rgba(255, 99, 71, 0.50);
 }
 
+.top-left:hover{
+    background-color:rgba(255, 99, 71, 0.50);
+}
+
 .top-right{
     cursor: pointer;
     position: absolute;
@@ -69,6 +73,11 @@ main {
 }
 
 .top-right:active{
+    background-color: #41daf250;
+
+}
+
+.top-right:hover{
     background-color: #41daf250;
 
 }
@@ -91,6 +100,10 @@ main {
     background-color: #5AF2B150;
 } 
 
+.bottom-right:hover{
+    background-color: #5AF2B150;
+} 
+
 .bottom-left{
     cursor: pointer;
     position: absolute;
@@ -106,6 +119,10 @@ main {
 }
 
 .bottom-left:active{
+    background-color:  #F2BB4150;
+} 
+
+.bottom-left:hover{
     background-color:  #F2BB4150;
 } 
 
