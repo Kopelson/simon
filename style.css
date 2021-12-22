@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+header, footer {
+    width: 100%;
+    height: 100px;
+}
+header {
+    margin-top: 50px;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    width: 300px;
+    height: 300px;
+}
+
+.top-left{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color:tomato;
+    border: 5px solid black;
+    border-radius: 100% 0% 0% 0%;
+    box-shadow: -4px -4px 16px 0px;
+}
+
+.top-left:active{
+    background-color:rgba(255, 99, 71, 0.50);
+}
+
+.top-right{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: #41dbf2;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 0% 100% 0% 0%;
+    box-shadow: 4px -4px 16px 0px;
+  
+}
+
+.top-right:active{
+    background-color: #41daf250;
+
+}
+
+
+.bottom-right{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: #5AF2B1;
+    border: 5px solid black;
+    border-radius: 0% 0% 100% 0%;
+    box-shadow: 4px 4px 16px 0px;
+}
+
+.bottom-right:active{
+    background-color: #5AF2B150;
+} 
+
+.bottom-left{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: #F2BB41;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-radius: 0% 0% 0% 100%;
+    box-shadow: -4px 4px 16px 0px;
+}
+
+.bottom-left:active{
+    background-color:  #F2BB4150;
+} 
+
+.inner-circle {
+    padding: 15px;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+
+button {
+    cursor: pointer;
+    background-color: white; 
+    border: 2px solid black;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+.active {
+    animation: active 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes active {
+    0%   {opacity: 1;}
+    25%  {opacity: .66;}
+    33%  {opacity: .33;}
+    50%  {opacity: .0;}
+    66%  {opacity: .33;}
+    75%  {opacity: .66;}
+    100% {opacity: 1;}
+  }
